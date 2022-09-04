@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>poligno</h1>
+    <script>
+        
+        let num_lados =parseInt(prompt("Digite o número de lados"))
+        let med_lados =parseInt(prompt("Digite a medida dos lados em CM"))
+
+
+        if(num_lados < 3){
+            document.write("<br>" + "Não é um polígono");
+        }
+        if(num_lados == 3){
+            document.write("<br>" + "É um triângulo");
+            document.write("<br>" + "Com " +med_lados+ " cm de perímetro");
+        }
+        if (num_lados == 4){
+            document.write("É um quadrado");
+            document.write("<br>" + "Com " +med_lados+ " cm de área");
+        }
+        if(num_lados == 5){
+            document.write("É um pentagono");
+        }
+        if(num_lados > 5){
+            document.write("<br>" + "Polígono não identificado");
+        }
+    </script>
+</body>
+</html>
